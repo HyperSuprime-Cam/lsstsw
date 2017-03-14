@@ -3,10 +3,10 @@
 #
 
 # top-level products
-PRODUCTS='lsst_distrib qserv_distrib dax_webserv'
+PRODUCTS='hscPipe'
 
 # change to ssh+git if push is needed
-VERSIONDB_REPO=${VERSIONDB_REPO:-https://github.com/lsst/versiondb.git}
+VERSIONDB_REPO=${VERSIONDB_REPO:-https://github.com/HyperSuprime-Cam/versiondb.git}
 # do not set this to true unless you're the automated LSST software account
 VERSIONDB_PUSH=${VERSIONDB_PUSH:-false}
 
@@ -19,7 +19,7 @@ VERSIONDB_PUSH=${VERSIONDB_PUSH:-false}
 LSSTSW=$(cd "$(dirname "$BASH_SOURCE")/.."; pwd)
 
 # the location of source repositories
-REPOSFILE_URL=${REPOSFILE_URL:-'https://raw.githubusercontent.com/lsst/lsstsw/master/etc/repos.yaml'}
+REPOSFILE_URL=${REPOSFILE_URL:-'https://raw.githubusercontent.com/HyperSuprime-Cam/lsstsw/master/etc/repos.yaml'}
 REPOSFILE=${REPOSFILE:-${LSSTSW}/etc/repos.yaml}
 
 # location of the build directory
