@@ -17,7 +17,7 @@ CONDA_CHANNELS=${CONDA_CHANNELS:-""}
 GIT_VERSION=${GIT_VERSION:-2.14.1}          # Version of git to install
 LFS_VERSION=${LFS_VERSION:-1.5.5}           # Version of git-lfs to install
 LSST_BUILD_GITREV=${LSST_BUILD_GITREV:-master}
-LSST_BUILD_GITREPO=${LSST_BUILD_GITREPO:-https://github.com/lsst/lsst_build.git}
+LSST_BUILD_GITREPO=${LSST_BUILD_GITREPO:-https://github.com/HyperSuprime-Cam/lsst_build.git}
 
 set -e
 
