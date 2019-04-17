@@ -18,8 +18,8 @@ LSST_CONDA_CHANNELS=${LSST_CONDA_CHANNELS:-""}
 LSST_GIT_VERSION=${LSST_GIT_VERSION:-2.18.0}
 LSST_LFS_VERSION=${LSST_LFS_VERSION:-2.4.2}
 LSST_BUILD_GITREV=${LSST_BUILD_GITREV:-master}
-LSST_BUILD_GITREPO=${LSST_BUILD_GITREPO:-https://github.com/lsst/lsst_build.git}
-LSST_SCIPIPECENV_GITREPO=${LSST_SCIPIPECENV_GITREPO:-https://github.com/lsst/scipipe_conda_env.git}
+LSST_BUILD_GITREPO=${LSST_BUILD_GITREPO:-https://github.com/HyperSuprime-Cam/lsst_build.git}
+LSST_SCIPIPECENV_GITREPO=${LSST_SCIPIPECENV_GITREPO:-https://github.com/HyperSuprime-Cam/scipipe_conda_env.git}
 # this git ref controls which set of conda packages are used to initialize the
 # the default conda env defined in scipipe_conda_env git package (RFC-553).
 LSST_SPLENV_REF=${LSST_SPLENV_REF:-1172c30}
@@ -172,7 +172,7 @@ main() {
   cd "$LSSTSW"
   # conda environment reference
   local env_file="${LSSTSW}/env/${LSST_SPLENV_REF}/${conda_packages}"
-  local env_url="https://raw.githubusercontent.com/lsst/scipipe_conda_env/${LSST_SPLENV_REF}/etc/"
+  local env_url="https://raw.githubusercontent.com/HyperSuprime-Cam/scipipe_conda_env/${LSST_SPLENV_REF}/etc/"
 
   echo "::: conda environment file: ${env_file}"
 
