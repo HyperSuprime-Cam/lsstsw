@@ -4,3 +4,7 @@
 cuda_toolkit            .*
 cuda_sdk                .*
 condor                  .*
+testdata_*              .*
+afwdata                 .*
+healpy                  .*
+obs_decam               .*
